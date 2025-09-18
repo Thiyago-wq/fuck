@@ -1,1 +1,35 @@
-oi
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Religiões do Mundo Interativo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Religiões do Mundo</h1>
+
+  <p>Clique em um país para ver as principais religiões e suas histórias.</p>
+
+  <div id="map-container">
+    <!-- SVG simplificado do mapa com alguns países -->
+    <svg id="world-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <!-- Exemplos de países simplificados -->
+      <path id="brasil" data-name="Brasil" d="M300,250 L350,230 L370,260 L320,280 Z" fill="#cce5ff" stroke="#333" stroke-width="1" cursor="pointer" />
+      <path id="india" data-name="Índia" d="M600,220 L640,210 L650,250 L610,260 Z" fill="#cce5ff" stroke="#333" stroke-width="1" cursor="pointer" />
+      <path id="egito" data-name="Egito" d="M500,180 L530,170 L540,200 L510,210 Z" fill="#cce5ff" stroke="#333" stroke-width="1" cursor="pointer" />
+      <path id="china" data-name="China" d="M680,150 L720,140 L730,180 L690,190 Z" fill="#cce5ff" stroke="#333" stroke-width="1" cursor="pointer" />
+      <path id="usa" data-name="Estados Unidos" d="M180,120 L230,110 L240,150 L190,160 Z" fill="#cce5ff" stroke="#333" stroke-width="1" cursor="pointer" />
+    </svg>
+  </div>
+
+  <div id="info-container">
+    <h2 id="country-name">Selecione um país</h2>
+    <div id="religions-info">
+      <p>Aqui aparecerá as principais religiões e histórias.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
